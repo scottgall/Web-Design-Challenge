@@ -10,11 +10,29 @@ body {
 .navbar-brand {
   background: #4aaaa5;
   color: white !important;
-  padding-left: 1em;
-  padding-right: 1em;
+  /* padding-left: 1em;
+  padding-right: 1em; */
   font-family: serif;
   font-weight: 600;
   font-size: 1.5em;
+  margin-left: 20px;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown {
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  color: rgba(0,0,0,.55);
+  padding-left: 30px;
+}
+
+.dropdown-toggle.show {
+  background: lightgray;
 }
 
 .navbar-nav .nav-item.active .nav-link,
@@ -24,11 +42,31 @@ body {
 
 .navbar-light .navbar-toggler {
   border-color: lightgray;
+  margin: 10px 20px;
 }
+
+.navbar-nav {
+  border-bottom: 1px solid lightgray;
+}
+
 
 @media (min-width: 992px) {
   .navbar {
     background: white;
+  }
+  .navbar-brand {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar-nav {
+    border-bottom: none;
+    margin-right: 20px;
+  }
+  .dropdown {
+    margin-top: 0;
+  }
+  .dropdown-item {
+    padding-left: 20px;
   }
 }
 
