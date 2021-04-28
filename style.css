@@ -68,6 +68,14 @@ body {
   .dropdown-item {
     padding-left: 20px;
   }
+  .dropdown-menu {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: 1px solid lightgray;
+    border-radius: 0 0 5px 5px;
+  }
+  .dropdown-menu[data-bs-popper] {
+    margin-top: 0;
+  }
 }
 
 h1, h3 {
