@@ -2,10 +2,6 @@ body {
   background: whitesmoke;
 }
 
-img {
-  width: 100%;
-}
-
 h1, h3 {
   color: #4aaaa5;
   font-family: serif;
@@ -81,31 +77,39 @@ p {
   .navbar {
     background: white;
   }
+
   .navbar-brand {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .navbar-nav {
     border-bottom: none;
     margin-right: 20px;
   }
+
   .dropdown {
     margin-top: 0;
   }
+
   .dropdown-item {
     padding-left: 20px;
   }
+
   .dropdown-menu {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border: 1px solid lightgray;
     border-radius: 0 0 5px 5px;
   }
+
   .dropdown-menu[data-bs-popper] {
     margin-top: 0;
   }
+
   .hidden-line {
     display: none;
   }
+  
   .table-responsive {
     border: none;
   }
