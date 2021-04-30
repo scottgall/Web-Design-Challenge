@@ -9,18 +9,18 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light mb-lg-4">
-      <div class="container-fluid">
-        <a class="navbar-brand navbrand" href="#">Latitude</a>
+      <div class="container-fluid p-0">
+        <a class="navbar-brand navbrand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto bg-white">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle ps-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Plots
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="maxtemp.html">Max Temperature</a></li>
                 <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
                 <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
@@ -28,50 +28,48 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="comparisons.html">Comparison</a>
+              <a class="nav-link ps-3" href="comparisons.html">Comparison</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
+              <a class="nav-link ps-3" href="data.html">Data</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-lg px-0">
-      <div class="row gx-4">
-        <div class="col-lg-8">
+    <div class="container-lg px-0 mb-lg-5">
+      <div class="row">
+        <div class="col">
           <div class="p-4 bg-white">
-            <h1>Summary: Latitude vs. X</h1>
+            <h1>Comparison: Latitude vs. X</h1>
             <hr>
-            <img src="assets/fig1.png" alt="Plot of city latitude vs. max temperature" class="float-start" width="300px">
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a datasaet on over 500 cities.<br><br> 
-            After assembling the dataset, we used Matplotlib to plot various aspectsw of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="p-4 bg-white">
-            <h3>Visualizations</h3>
-            <hr>
+            <p class="pb-3">Click any plot to get an in-depth analysis.</p>
             <div class="container-fluid p-0">
-              <div class="row gy-2">
-                <div class="col-3 col-lg-6">
+              <div class="row">
+                <div class="col-12 col-lg-6 pb-5">
+                  <h3 class="text-center">vs. Max Temperature</h3>
                   <a href="maxtemp.html">
                     <img class="img-fluid" src="assets/fig1.png" alt="thumbnail of latitude vs. max temperature plot">
                   </a>
                 </div>
-                <div class="col-3 col-lg-6">
+                <hr class="hidden-line">
+                <div class="col-12 col-lg-6 pb-5">
+                  <h3 class="text-center">vs. Humidity</h3>
                   <a href="humidity.html">
                     <img class="img-fluid" src="assets/fig2.png" alt="thumbnail of latitude vs. humidity plot">
                   </a>
                 </div>
-                <div class="col-3 col-lg-6">
+                <hr class="hidden-line">
+                <div class="col-12 col-lg-6 pb-5 pb-lg-0">
+                  <h3 class="text-center">vs. Cloudiness</h3>
                   <a href="cloudiness.html">
                     <img class="img-fluid" src="assets/fig3.png" alt="thumbnail of latitude vs. cloudiness plot">
                   </a>
                 </div>
-                <div class="col-3 col-lg-6">
+                <hr class="hidden-line">
+                <div class="col-12 col-lg-6 pb-3 pb-lg-0">
+                  <h3 class="text-center">vs. Wind Speed</h3>
                   <a href="windspeed.html">
                     <img class="img-fluid" src="assets/fig4.png" alt="thumbnail of latitude vs. wind speed plot">
                   </a>
